@@ -1,9 +1,12 @@
+API Practice Link: https://www.automationexercise.com/api_list
+
 //Maven Project
  The below maven dependencies to be added to the project.
  1) TestNG
  2) Cucumber
- 3) RestAssured
- 4) Hamcrest
+ 3) Cucumber-TestNG
+ 4) RestAssured
+ 5) Hamcrest
 
  Mvn Commands:
  1) mvn validate: Verifies if pom.xml is correct and all information is available
@@ -19,8 +22,6 @@
  11) mvn archetype:generate: To create a new project based on specified archetype (Project template)
  12) mvn dependency:tree: Displays the project dependency tree, showing all direct and transitive dependencies
 
- //Git
-
 Git Commands:
 1) git init: Initializes a new Git repository in your project directory.
 2) git remote add origin "<GITHUB_URL>": Connects your local repository to the remote GitHub repository.
@@ -28,4 +29,15 @@ Git Commands:
 4) git status: Displays the current status of your files, showing which are staged or unstaged.
 5) git commit -m "Initial Commit": Creates a local commit with the message “Initial Commit” and a unique commit ID.
 6) git branch -M main: Renames the current branch to main (the default branch for GitHub).
-7) git push: Pushes your local commits to the remote repository on the main branch.
+7) git push -u origin main: Pushes your local commits to the remote repository on the main branch.
+
+//Cucumber Framework
+Created a Feature file - Products, Brands, Login and linked it to a ProductDetails StepDefinition file.
+Cucumber Exceptions: UndefinedStepException
+
+//TestNG
+TestNGRunner class is created where feature and step definition files are linked to have smooth test executions.
+
+//Regex expressions
+Used RegEx Expressions in step definitions to pass any type of datas
+
