@@ -1,0 +1,10 @@
+//Cucumber
+1) How to write and maintain reusable code across the framework?
+2) How to data drive the data into Testcase?
+3) How to parameterize the testcases with multiple set of data?
+4) How to achieve 100% Test coverage through framework?
+5) How to run all the Tests on single click?
+6) How to control the execution of tests to select and run only few based on needs?
+7) How to implement logic to separate Test code from common Post and Prerequisites of the Test?
+8) How to generate HTML reports and JUnit reports?
+9) How to develop Maven framework with existing code?
