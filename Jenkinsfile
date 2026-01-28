@@ -40,7 +40,7 @@ pipeline {
 
     post {
         always {
-            archiveArtifacts artifacts: 'logs/**/*.log', fingerprint: true
+            archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
         }
         failure {
             echo 'Build failed – logs uploaded for analysis'
