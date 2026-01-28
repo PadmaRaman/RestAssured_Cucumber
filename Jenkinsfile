@@ -3,7 +3,7 @@ pipeline {
 
     environment
     AWS_DEFAULT_REGION = "us-east-1"
-    S3_BUCKET = ""
+    S3_BUCKET = "restassured-cucumber-test-artifacts"
     REPORT_DIR = "target/cucumber_reports"
     }
 
@@ -12,7 +12,7 @@ pipeline {
     {
        steps
         {
-            git ''
+            git 'https://github.com/PadmaRaman/RestAssured_Cucumber.git'
         }
     }
 
