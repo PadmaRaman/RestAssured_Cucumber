@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = "us-east-1"
-        S3_BUCKET = "qa-sauce-demo-test-artifacts"
+        S3_BUCKET = "restassured-cucumber-test-artifacts"
         REPORT_DIR = "target/cucumber_reports"
     }
 
@@ -41,6 +41,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'reports/**/*.html', fingerprint: true
+            archiveArtifacts artifacts: 'reports/**/*.json', fingerprint: true
         }
         failure {
             echo 'Build failed – logs uploaded for analysis'
